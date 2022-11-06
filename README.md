@@ -10,7 +10,9 @@
 
 ## Links
 
-- Figma layout: [🔗 Click here ](https://www.figma.com/file/pFtOAPwFMljAWAPpyjtqHu/Calend%C3%A1rio-de-Jogos-(Community)/duplicate)
+- 🔗 Solution URL: [https://wildermiranda.github.io/nlw-copa/](https://wildermiranda.github.io/nlw-copa/)
+
+- 🔗 Figma layout: [Click here ](https://www.figma.com/file/pFtOAPwFMljAWAPpyjtqHu/Calend%C3%A1rio-de-Jogos-(Community)/duplicate)
 
 
 ## Built with
@@ -18,7 +20,6 @@
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
 - JavaScript
 
 
