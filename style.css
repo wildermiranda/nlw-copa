@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+  --card-title-border-color: #746615;
+  --card-color-primary: #F7DD43; 
+  --card-bg-color: #1D1C19;
+}
+
+body.blue {
+  --card-title-border-color: #338AF3;
+  --card-color-primary: #338AF3;
+  --card-bg-color: #202024;
+}
+
+body.green {
+  --card-title-border-color: #047C3F;
+  --card-color-primary: #047C3F;
+  --card-bg-color: #1A1F1B;
+}
+
+
+body {
+  background-color: #121214;
+}
+
+
+#app {
+  width: fit-content;
+  margin: 52px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+header {
+  margin-bottom: 63px;
+}
+
+
+
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+.card {
+  padding: 32px 23px;
+  border-bottom: 2px solid var(--card-color-primary);
+  border-radius: 6px;
+  background-color: var(--card-bg-color);
+  text-align: center;
+}
+
+
+.card h2 {
+  width: fit-content;
+  padding: 8px 16px;
+  border: 1px solid var(--card-title-border-color);
+  border-radius: 6px;
+  margin-bottom: 53px;
+  margin-inline: auto;
+  color: #F7DD43;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.card h2 span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #E1E1E6;
+  text-transform: uppercase;
+}
+
+.card ul {
+  width: 270px;
+  list-style: none;
+}
+
+
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* Selecionar um li que antes dele tem outro li */
+.card ul li + li {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #323238;
+}
+
+
+.card ul li strong {
+  font-size: 35px;
+  color: #E1E1E6;
+  font-weight: 700;
+}
+
+
+/* Transition */
+
+.card h2:hover,
+.card ul li img:hover,
+.card ul li strong:hover {
+  transform: scale(1.1)
+}
+
+.card h2,
+.card ul li img,
+.card ul li strong {
+  transition: transform 0.3s;
+}
+
+
+/* Animation */
+
+.card {
+  animation: appear 1s;
+}
+
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0
+  }
+  
+  100% {
+    opacity: 1
+  }
+}
+
+
+
+
+@media (min-width: 1020px) {
+  #cards {
+    flex-direction: row;
+  }
+}
